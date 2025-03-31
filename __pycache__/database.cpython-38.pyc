@@ -1,0 +1,9 @@
+U
+
+    }°кg»  г                   @   sR   d dl mZmZ d dlmZ d dlmZ dZeeddЌZeededЌZ	d	d
+„ Z
+dS )й    )Ъcreate_async_engineЪAsyncSession)Ъsessionmaker)ЪBasezsqlite+aiosqlite:///./chat.dbT)ЪechoF)Ъexpire_on_commitЪclass_c               
+   Г   s:   t  Ў 4 I d H љ} |  tjjЎI d H  W 5 Q I d H R X d S )N)ЪengineЪbeginЪrun_syncr   ЪmetadataЪ
+create_all)Ъconn© r   х2   C:\Users\РЎРµСЂРіРµР№\Desktop\chat_app\database.pyЪinit_db
+   s    r   N)Zsqlalchemy.ext.asyncior   r   Zsqlalchemy.ormr   Ъmodelsr   ZDATABASE_URLr	   Ъ
+async_sessionr   r   r   r   r   Ъ<module>   s   
