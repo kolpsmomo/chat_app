@@ -1,1 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aspect Chat</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Модальное окно ввода имени -->
+        <div class="username-modal" id="username-modal">
+            <div class="modal-content">
+                <h2>Введите ваше имя</h2>
+                <input type="text" id="username-input" placeholder="Ваше имя" required>
+                <button id="submit-username">Войти в чат</button>
+            </div>
+        </div>
 
+        <!-- Основной интерфейс чата -->
+        <div class="chat-container" id="chat-container">
+            <div class="chat-header">
+                <h1>Чат Аспекта (<span id="current-username"></span>)</h1>
+            </div>
+            
+            <div class="chat-messages" id="chat-messages"></div>
+            
+            <div class="chat-input">
+                <button id="emoji-btn">😀</button>
+                <div id="emoji-picker" class="emoji-picker"></div>
+                <input type="text" id="message-input" placeholder="Введите сообщение...">
+                <button id="send-button">Отправить</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно подтверждения удаления -->
+    <div id="delete-modal" class="delete-modal">
+        <div class="delete-modal-content">
+            <p>Удалить сообщение?</p>
+            <div class="delete-modal-buttons">
+                <button id="confirm-delete">Да</button>
+                <button id="cancel-delete">Нет</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
